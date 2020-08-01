@@ -2,14 +2,13 @@
 
 This repository contains a browser based GUI software for the deep learning motion correction algorithm publlished in:
 
-Pawar K, Chen Z, Shah NJ, Egan GF. Suppressing motion artefacts in MRI using an Inception‐ResNet network with motion simulation augmentation. *NMR in Biomedicine. 2019 Dec 22:e4225. doi: [https://doi.org/10.1002/nbm.4225](https://doi.org/10.1002/nbm.4225)* 
+[Pawar K, Chen Z, Shah NJ, Egan GF. Suppressing motion artefacts in MRI using an Inception‐ResNet network with motion simulation augmentation. *NMR in Biomedicine. 2019 Dec 22:e4225.*](https://doi.org/10.1002/nbm.4225)
 
 ## Installation
 clone the repository and run the setup.sh file
 ````
 sh setup.sh
 ````
-
 
 ## Run
 To start GUI run
