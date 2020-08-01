@@ -15,14 +15,18 @@ To start GUI run
 ````
 python runMcAPP.py
 ````
-In web browser go to [http://127.0.0.1:5000](http://127.0.0.1:5000/process)
+In web browser go to [http://127.0.0.1:5000](http://127.0.0.1:5000/process) (tested with Google Chrome)
 
-This should display GUI as
+
+This should display GUI
 
 ![GuiScreenshot](./static/ScreenShot.png)
 
 Click on **Choose Files** and select all the dicom files (*.dcm) for the scan, then click on **upload**, which will display the motion degraded image in the left viewer
 
-Click on **Process** to run the AI motion correction algorithms on the input image.
+Click on **Process** to run the AI motion correction algorithms on the input images.
 
-Click in **Download** to save motion corrected images. (It will be a zip file which contains all the processed dicom images)
+Click in **Download** to save motion corrected images. (It will be a zip file containing all the processed dicom images)
+
+The GUI uses [papya viewer](https://github.com/rii-mango/Papaya).
+Explore the top right corner icons of the image viewer for image roatation and dynamic range settings. 
