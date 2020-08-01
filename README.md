@@ -17,8 +17,8 @@ This should display GUI as
 
 ![GuiScreenshot](./static/ScreenShot.png)
 
-Click on **Choose Files** and select all the dicom files (*.dcm) for the scan, follwed by upload, which will display the motion degraded image in the left viewer
+Click on **Choose Files** and select all the dicom files (*.dcm) for the scan, then click on **upload**, which will display the motion degraded image in the left viewer
 
-Click on **Process** to run the AI motion correction on the input image.
+Click on **Process** to run the AI motion correction algorithms on the input image.
 
-Click in **Download** to save motion corrected images. (It will be a zip file which contains all the precessed dicom images)
+Click in **Download** to save motion corrected images. (It will be a zip file which contains all the processed dicom images)
