@@ -1,0 +1,105 @@
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" onscroll="">
+    <head>
+        <title>AI Motion Correction - T1 Image </title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    	<!-- iOS meta tags -->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
+    	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    	<link rel="stylesheet" type="text/css" href = "/static/papaya.css" />
+    	<script type="text/javascript" src="/static/papaya.js"></script>
+
+    	<title>Papaya Viewer</title>
+
+        <script type="text/javascript">
+			var params = [];
+			params["noNewFiles"] = true
+			params["smoothDisplay"] = false
+			params["images"] = ["static/data/recievedFilesNifti/input.nii"]
+		</script>
+
+        <script type="text/javascript">
+			var params1 = [];
+			params1["noNewFiles"] = true
+			params1["smoothDisplay"] = false
+			params1["images"] = ["static/data/processedFilesNifiti/output.nii"]
+		</script>
+
+		<style>
+		* {
+		  box-sizing: border-box;
+		}
+
+		/* Create two unequal columns that floats next to each other */
+		.column {
+		  float: left;
+		  padding: 10px;
+		  height: 300px; /* Should be removed. Only for demonstration */
+		}
+
+		.left {
+		  width: 50%;
+		}
+
+		.right {
+		  width: 50%;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		h1 {text-align: center;}
+        p {text-align: center;}
+        div {text-align: center;}
+		</style>
+
+    </head>
+    <body>
+    <h1>AI Motion Correction for T1 Contrast Magnetic Resonance Image </h1>
+	<div class="column left">
+        <form action="/handleUpload" method="post" enctype="multipart/form-data">
+            <font size="3">Choose Dicom Files for Motion Correction:</font> <BR><BR>
+
+            <input type="file" name="file" multiple="" accept=".dcm"/>
+                <input type="submit" value="Upload" onclick="$('#uploading').show();"/>
+            <div id="uploading" style="display:none;"><img src="./static/ajax-loader.gif" alt="" />
+                <BR> uploading please wait...</div>
+        </form>
+        <BR> <h2>Input - motion degraded image</h2> <BR>
+        <form>
+			<div class="papaya" data-params="params" ></div>
+        </form>
+	</div>
+
+	<div class="column right">
+
+        <form action="/process" method="post" enctype="multipart/form-data">
+<!--                <input type="submit" value="Process" onsubmit="myButton.disabled = true;"/><BR>-->
+            <input type="submit" value="Process" onclick="$('#processing').show();"/><BR>
+            <div id="processing" style="display:none;"><img src="./static/ajax-loader.gif" alt="" />
+                <BR> processing please wait...</div>
+        </form>
+
+        <form action="/return_mc_zip" method="post" enctype="multipart/form-data">
+                <input type="submit" value="Download"/>
+        </form>
+        <BR> <h2>Output - motion corrected image</h2> <BR>
+        <form>
+			<div class="papaya" data-params="params1" ></div>
+        </form>
+	</div>
+    </body>
+</html>
+
+
+
+    	<link rel="stylesheet" type="text/css" href = "{{ url_for('static', filename='papaya.css')}}" />
+    	<script type="text/javascript" src="{{ url_for('static', filename='papaya.css')}}"></script>
