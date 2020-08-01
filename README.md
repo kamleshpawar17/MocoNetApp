@@ -4,9 +4,9 @@ This repository contains a browser based GUI software for the deep learning moti
 
 Pawar K, Chen Z, Shah NJ, Egan GF. Suppressing motion artefacts in MRI using an Inception‐ResNet network with motion simulation augmentation. *NMR in Biomedicine. 2019 Dec 22:e4225. doi: [https://doi.org/10.1002/nbm.4225](https://doi.org/10.1002/nbm.4225)* 
 
-# Installation
+## Installation
 
-# Run
+## Run
 To start GUI run
 ````
 python runMcAPP.py
