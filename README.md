@@ -14,7 +14,8 @@ python runMcAPP.py
 In web browser go to [http://127.0.0.1:5000](http://127.0.0.1:5000/process)
 
 This should display GUI as
-![GuiScreenshot](https://github.com/kamleshpawar17/MocoNetApp/tree/master/static/ScreenShot.png).
+
+![GuiScreenshot](https://github.com/kamleshpawar17/MocoNetApp/tree/master/static/ScreenShot.png)
 
 Click on **Choose Files** and select all the dicom files (*.dcm) for the scan, follwed by upload, which will display the motion degraded image in the left viewer
 
