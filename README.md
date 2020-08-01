@@ -14,4 +14,12 @@ python runMcAPP.py
 In web browser go to [http://127.0.0.1:5000](http://127.0.0.1:5000/process)
 
 This should display GUI as
+<p align="center">
+  <img src="https://github.com/kamleshpawar17/MocoNetApp/tree/master/static/ScreenShot.png">
+</p>
 
+Click in 'Choose Files' and select all the dicom files (*.dcm) for the scan, follwed by upload, which will display the motion degraded image in the left viewer
+
+Click on 'Process' to run the AI motion correction on the input image.
+
+Click in 'Download' to save motion corrected images. (It will be a zip file which contains all the precessed dicom images)
