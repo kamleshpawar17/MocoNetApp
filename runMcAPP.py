@@ -53,10 +53,13 @@ def handleFileUpload():
         for f in files:
             if f.filename != '':
                 f.save(os.path.join(basepath, 'uploads', f.filename))
-        # ---- write nifiti for display ---- 3
-        img, ds = readDicomFrmFolder('./uploads')
-        imgInpObj = nb.Nifti1Image(img, np.eye(4))
-        nb.save(imgInpObj, './static/data/recievedFilesNifti/input.nii')
+        # ---- write nifiti for display ---- #
+        try:
+            img, ds = readDicomFrmFolder('./uploads')
+            imgInpObj = nb.Nifti1Image(img, np.eye(4))
+            nb.save(imgInpObj, './static/data/recievedFilesNifti/input.nii')
+        except:
+            return str('Failed to Process, check that all dicom files were selected correctly')
         return redirect(url_for('fileFrontPage'))
 
 
@@ -67,7 +70,7 @@ def process():
             run_mc()
             zip_dir()
         except:
-            return str('Failed to Process, check that all dicom files were uploaded')
+            return str('Failed to Process, unexpected error occurred')
     return render_template('index.html')
 
 

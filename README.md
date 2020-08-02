@@ -11,7 +11,7 @@ sh setup.sh
 ````
 
 ## Dependencies
-nibabel, gevent, flask, progressbar, nibabel, pydicom, Keras
+nibabel, gevent, flask, progressbar, nibabel, pydicom, Keras, zipfile
 
 ## Run
 To start GUI run
