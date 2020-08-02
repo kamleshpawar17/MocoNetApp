@@ -10,6 +10,9 @@ clone the repository and run the setup.sh file
 sh setup.sh
 ````
 
+## Dependencies
+nibabel, gevent, flask, progressbar, nibabel, pydicom, Keras
+
 ## Run
 To start GUI run
 ````
