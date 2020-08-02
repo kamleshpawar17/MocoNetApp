@@ -63,7 +63,7 @@
 
     </head>
     <body>
-    <h1>AI Motion Correction for T1 Contrast Magnetic Resonance Image </h1>
+    <h1 style="color:rgb(64,64,64)">AI Motion Correction for T1 Contrast Magnetic Resonance Imaging </h1>
 	<div class="column left">
         <form action="/handleUpload" method="post" enctype="multipart/form-data">
             <font size="3">Choose Dicom Files for Motion Correction:</font> <BR><BR>
@@ -73,12 +73,12 @@
             <div id="uploading" style="display:none;"><img src="./static/ajax-loader.gif" alt="" />
                 <BR> uploading please wait...</div>
         </form>
-        <BR> <h2>Input - motion degraded image</h2> <BR>
+        <BR> <h2 style="color:rgb(64,64,64)">Input - motion degraded image</h2> <BR>
         <form>
 			<div class="papaya" data-params="params" ></div>
         </form>
-        <p style="color:rgb(255,0,0);">For research purposes only </p>
-
+        <p style="color:rgb(255,0,0)">For research purposes only </p>
+        <p style="color:rgb(0,0,255); font-size:12px">Author's Email: kamlesh.pawar@monash.edu</p>
 	</div>
 
 	<div class="column right">
@@ -93,7 +93,7 @@
         <form action="/return_mc_zip" method="post" enctype="multipart/form-data">
                 <input type="submit" value="Download"/>
         </form>
-        <BR> <h2>Output - motion corrected image</h2> <BR>
+        <BR> <h2 style="color:rgb(64,64,64)">Output - motion corrected image</h2> <BR>
         <form>
 			<div class="papaya" data-params="params1" ></div>
         </form>
@@ -101,8 +101,6 @@
 	</div>
     </body>
 </html>
-
-
 
     	<link rel="stylesheet" type="text/css" href = "{{ url_for('static', filename='papaya.css')}}" />
     	<script type="text/javascript" src="{{ url_for('static', filename='papaya.css')}}"></script>
