@@ -18,7 +18,7 @@ To start GUI run
 ````
 python runMcAPP.py
 ````
-In web browser go to [http://127.0.0.1:5000](http://127.0.0.1:5000/process) (tested with Google Chrome)
+In web browser go to [http://127.0.0.1:5000](http://127.0.0.1:5000) (tested with Google Chrome)
 
 
 This should display GUI
