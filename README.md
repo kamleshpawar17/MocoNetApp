@@ -29,9 +29,9 @@ Click on **Choose Files** and select all the dicom files (*.dcm) for the scan, t
 
 Click on **Process** to run the AI motion correction algorithms on the input images.
 
-Click in **Download** to save motion corrected images. (It will be a zip file containing all the processed dicom images)
+Click in **Download** to save motion-corrected images. (It will be a zip file containing all the processed dicom images)
 
 The GUI uses [papya viewer](https://github.com/rii-mango/Papaya).
-Explore the top right corner icons of the image viewer for image roatation and dynamic range settings. 
+Explore the top right corner icons of the image viewer for image rotation and dynamic range settings. 
 
-**Note:** If viewer shows the same image even after uploading the new images, this is because the broweser is displaying image from the cache. On macOS + google chrome, use cmd+shift+r to bypass cache or use shift+reload-click 
+**Note:** If the viewer shows the same image even after uploading the new images, this is because the browser is displaying images from the cache. On macOS + google chrome, use cmd+shift+r to bypass cache or use shift+reload-click 
