@@ -28,3 +28,6 @@ Explore the top right corner icons of the image viewer for image rotation and dy
 **Note:** If the viewer shows the same image even after uploading the new images, this is because the browser is displaying images from the cache. On macOS + google chrome, use cmd+shift+r to bypass cache or use shift+reload-click 
 
 ### Alternatively, a self contained docker container is available [here](https://hub.docker.com/r/kamleshp/moconetapp) 
+
+### Algorithm based on the paper (please cite)
+Pawar, K., Chen, Z., Shah, N.J. and Egan, G.F., 2022. Suppressing motion artefacts in MRI using an Inception‐ResNet network with motion simulation augmentation. NMR in Biomedicine, 35(4), p.e4225.
