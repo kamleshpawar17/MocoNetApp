@@ -5,4 +5,5 @@ progressbar==2.5
 pydicom==2.0.0
 tensorflow==1.14.0
 Keras==2.2.4
+h5py==2.10.0
 
